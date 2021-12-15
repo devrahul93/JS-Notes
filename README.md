@@ -6,15 +6,6 @@ a = b \* 2;
 
 here it tells the computer roughly to get a current stores value of variable b ,multiply by the value 2, then store the result back into another variable we call a. a and b are variables ,\* and = is and operator. "=" is known as assignment operator.
 
-a = b \* 2;
-This is a **statement**.This statement is made up of four **expressions** .
-
-- 2 is a _literal value expression_.
-- b is a _variable expression_.which means to retrive its current value.
-- b \* 2 is an _arithmetic expression_. which means do multiplication.
-- a = b \* 2 is an _assignment expression_.which means to assign the result of b \*2 expression to a variable a.
-
-This expression is then translated (compiled or interperated) into computer language. Interperating the code means executing the code from top to bottom . but Javascript is a compiled language,the translation is done ahead of time.The javascript engine actually compile the program on the fly and then immediately runs the compiled code. All relevant modern engines use just-in-time compilation for improved performance.
 **common operator in javascript**
 
 - # _Assignment_ =>
@@ -34,3 +25,30 @@ This expression is then translated (compiled or interperated) into computer lang
 # _TransPiler(Babel)_ =>
 
 Javascript is not a forward compatible language means a code written in 2019 can not run in program of 2016. whereas HTML and CSS are forward compatible it will skip over the new syntax and runs the code. thats why we use _*transpiler*_ like _Babel_ that converts newer JS syntax to older JS syntax.
+
+_Three pillar of Js_ =>
+
+- Types/Coercion
+- Scope/Closure
+- this/prototypes
+
+_Programming Piller(in JS)_ =>
+
+- Values
+- Operation
+- Variable
+- # Expression and Statement
+- Decision
+- Loops
+- Function
+
+_[# Expression and Statement]Expression and Statement_ =>
+a = b \* 2;
+This is a **statement**.This statement is made up of four **expressions** .
+
+    - 2 is a _literal value expression_.
+    - b is a _variable expression_.which means to retrive its current value.
+    - b \* 2 is an _arithmetic expression_. which means do multiplication.
+    - a = b \* 2 is an _assignment expression_.which means to assign the result of b \*2 expression to a variable a.
+
+    This expression is then translated (compiled or interperated) into computer language. Interperating the code means executing the code from top to bottom . but Javascript is a compiled language,the translation is done ahead of time.The javascript engine actually compile the program on the fly and then immediately runs the compiled code. All relevant modern engines use just-in-time compilation for improved performance.

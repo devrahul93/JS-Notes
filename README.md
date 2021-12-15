@@ -46,9 +46,8 @@ _Expression and Statement_ =>
 a = b \* 2;
 This is a **statement**.This statement is made up of four **expressions** .
 
-    - 2 is a _literal value expression_.
-    - b is a _variable expression_.which means to retrive its current value.
-    - b \* 2 is an _arithmetic expression_. which means do multiplication.
-    - a = b \* 2 is an _assignment expression_.which means to assign the result of b \*2 expression to a variable a.
-
-    This expression is then translated (compiled or interperated) into computer language. Interperating the code means executing the code from top to bottom . but Javascript is a compiled language,the translation is done ahead of time.The javascript engine actually compile the program on the fly and then immediately runs the compiled code. All relevant modern engines use just-in-time compilation for improved performance.
+1. 2 is a _literal value expression_.
+2. b is a _variable expression_.which means to retrive its current value.
+3. b \* 2 is an _arithmetic expression_. which means do multiplication.
+4. a = b \* 2 is an _assignment expression_.which means to assign the result of b \*2 expression to a variable a.
+   This expression is then translated (compiled or interperated) into computer language. Interperating the code means executing the code from top to bottom . but Javascript is a compiled language,the translation is done ahead of time.The javascript engine actually compile the program on the fly and then immediately runs the compiled code. All relevant modern engines use just-in-time compilation for improved performance.

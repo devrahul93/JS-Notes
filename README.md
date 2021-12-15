@@ -17,8 +17,7 @@ This is a **statement**.This statement is made up of four **expressions** .
 This expression is then translated (compiled or interperated) into computer language. Interperating the code means executing the code from top to bottom . but Javascript is a compiled language,the translation is done ahead of time.The javascript engine actually compile the program on the fly and then immediately runs the compiled code. All relevant modern engines use just-in-time compilation for improved performance.
 **common operator in javascript**
 
-- _Assignment_ =>
-  =
+- # _Assignment_ =>
 - _Math_ =>
   +,-,\*,/
 - _Compound Assignment_ =>
@@ -31,3 +30,6 @@ This expression is then translated (compiled or interperated) into computer lang
   <,>,<=,>=
 - _Logical_ =>
   &&(and),||(or)
+
+  **Transpiler(Babel)**  
+   Javascript is not a forward compatible language means a code written in 2019 can not run in program of 2016. whereas HTML and css are forward compatible it will skip over the new syntax and runs the code. thats why we use _*transpiler*_ like _Babel_ that converts newer JS syntax to older JS syntax.

@@ -37,12 +37,12 @@ _Programming Piller(in JS)_ =>
 - Values
 - Operation
 - Variable
-- # Expression and Statement
+- Expression and Statement
 - Decision
 - Loops
 - Function
 
-_[# Expression and Statement]Expression and Statement_ =>
+_[Expression and Statement]Expression and Statement_ =>
 a = b \* 2;
 This is a **statement**.This statement is made up of four **expressions** .
 

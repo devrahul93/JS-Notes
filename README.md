@@ -10,7 +10,7 @@ here it tells the computer roughly to get a current stores value of variable b ,
 
 Javascript is not a forward compatible language means a code written in 2019 can not run in program of 2016. whereas HTML and CSS are forward compatible it will skip over the new syntax and runs the code. thats why we use _*transpiler*_ like _Babel_ that converts newer JS syntax to older JS syntax.
 
-_Three pillar of Js_ =>
+<h2>Three pillar of Js</h2> =>
 
 - Types/Coercion
 - Scope/Closure

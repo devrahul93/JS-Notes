@@ -2,6 +2,19 @@
 
 The first JavaScript engine was created by Brendan Eich in 1995 for the Netscape Navigator web browser.
 
+Javascript is a synchronous single-threaded language. All code is executed in Exection Context.
+
+<table>
+  <tr>
+    <th>Memory/Variable Environment</th>
+    <th>Code/ Thread of Execution</th>
+  </tr>
+  <tr>
+    <td>a:10 /fn:{..}</td>
+    <td>here code is executed one by one</td>
+  </tr>
+</table>
+
 a = b \* 2;
 
 here it tells the computer roughly to get a current stores value of variable b ,multiply by the value 2, then store the result back into another variable we call a. a and b are variables ,\* and = is and operator. "=" is known as assignment operator.
@@ -37,7 +50,7 @@ typeof([])//It return object not array
 var v=null
 typeof(v)// It returns undefined
 
-- note:- Use New keyword => The new operator lets developer create an instance of a user defined object type or of one of built in object types that has a constructor function
+- note:- Use New keyword => The new operator lets developer create an instance of a user defined object type or of one of built in object types that has a constructor function. <br/>
 <strong>Use new:</strong>
 <ul>
   <li>Object()</li>
@@ -45,7 +58,7 @@ typeof(v)// It returns undefined
   <li>Function()</li>
   <li>Date()</li>
   <li>RegExp()</li>
-  <li>Error</li>
+  <li>Error()</li>
 </ul>
 
 <strong>Don't Use New</strong>

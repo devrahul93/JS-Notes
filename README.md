@@ -16,7 +16,7 @@ Javascript is not a forward compatible language means a code written in 2019 can
 - Scope/Closure
 - this/prototypes
 
-<h2 style="color:red;">Types & Coercion</h2>
+<h2>Types & Coercion</h2>
 
 - Primitive Types
 - Converting Types
@@ -30,6 +30,31 @@ Javascript is not a forward compatible language means a code written in 2019 can
 - Boolean
 - Object
 - Symbol
+
+type of (function)// It return function
+typeof({})//It return object
+typeof([])//It return object not array
+var v=null
+typeof(v)// It returns undefined
+
+- note:- Use New keyword => The new operator lets developer create an instance of a user defined object type or of one of built in object types that has a constructor function
+<strong>Use new:</strong>
+<ul>
+  <li>Object()</li>
+  <li>Array()</li>
+  <li>Function()</li>
+  <li>Date()</li>
+  <li>RegExp()</li>
+  <li>Error</li>
+</ul>
+
+<strong>Don't Use New</strong>
+
+<ul>
+  <li>String()</li> 
+  <li>Number()</li> 
+  <li>Boolean()</li> 
+</ul>
 
 <h1>Programming Piller(in JS)</h1>
 

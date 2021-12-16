@@ -2,7 +2,7 @@
 
 The first JavaScript engine was created by Brendan Eich in 1995 for the Netscape Navigator web browser.
 
-Javascript is a synchronous single-threaded language. All code is executed in Exection Context.
+Javascript is a synchronous single-threaded language. All code is executed in Exection Context.first variable and created in memeory and then it gets executed.
 
 <table>
   <tr>
@@ -14,6 +14,20 @@ Javascript is a synchronous single-threaded language. All code is executed in Ex
     <td>here code is executed one by one</td>
   </tr>
 </table>
+
+<h1>Hosting In Javascript</h1>
+
+```Javascript
+  getName();
+  console.log(x);
+  console.log(getName);
+
+  var x=7;
+
+  function getName(){
+    console.log('Namaste Javascript')
+  }
+```
 
 a = b \* 2;
 
@@ -79,7 +93,7 @@ typeof(v)// It returns undefined
 - Loops
 - Function
 
-**Operation** =>
+<h2>Operation =></h2>
 _common operator in javascript_
 
 - _Assignment_ => =
@@ -102,7 +116,7 @@ _common operator in javascript_
 - _Logical_ =>
   &&(and),||(or)
 
-**Expression and Statement** =>
+<h2>Expression and Statement</h2> =>
 a = b \* 2;
 This is a _statement_.This statement is made up of four _expressions_ .
 

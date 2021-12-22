@@ -18,9 +18,9 @@ Javascript is a synchronous single-threaded language. All code is executed in Ex
 <h1>Hosting In Javascript</h1>
 
 ```Javascript
-  getName();
-  console.log(x);
-  console.log(getName);
+  getName(); //Namaste Javascript
+  console.log(x); //Undefined
+  console.log(getName); //function
 
   var x=7;
 
@@ -28,6 +28,11 @@ Javascript is a synchronous single-threaded language. All code is executed in Ex
     console.log('Namaste Javascript')
   }
 ```
+
+It happens as first variable are alloted in memory with a value of undefined and function with its all of its value in memory .than in thread of execution all the code is executed one by one. like varaibe is given its value and function is executed.
+
+<h3>Difference between not defined and undifined?</h3>
+<p> Not defined means the varaible has not assigned a value in a memory .Undefined means the varible is present in the memory but has not been alloted a value</p>
 
 a = b \* 2;
 

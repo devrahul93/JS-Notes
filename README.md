@@ -154,12 +154,14 @@ console.log(greetStudents(names))
 </li>
 <li>
 1. Write a function called greet which take name and role as parameters. Use your function to greet all the your classmates.
-<div>Answer:```JavaScript
+<div>Answer:
+```JavaScript
 const greet=(name,role)=>{
   return `Hi Angelica,nice to meet you I am ${name} and i am ${role||'student'}`
 }
 console.log(greet('Raja'))
-```</div>
+```
+</div>
 
 </li>
 </ul>

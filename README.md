@@ -139,7 +139,7 @@ This is a _statement_.This statement is made up of four _expressions_ .
 <li>
 Qu. Write a function called greet which take name and role as parameters. Use your function to greet all the your classmates.
 <div>Answer:
-```Javascript
+```js
 const greet=(name,role)=>{
   return `Hi Angelica,nice to meet you I am ${name} and i am ${role||'student'}`
 }
@@ -150,7 +150,7 @@ console.log(greet('Raja'))
 <li>
 Qu.Write a function called greetStudents, which take an array of names. Use your function to greet all the your classmates.
 <div>
-```Javascript
+```js
 const names = [
   'Pradip',
   'Van',

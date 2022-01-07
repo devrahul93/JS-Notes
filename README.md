@@ -134,7 +134,7 @@ This is a _statement_.This statement is made up of four _expressions_ .
 - note:- This expression is then translated (compiled or interperated) into computer language. Interperating the code means executing the code from top to bottom . but Javascript is a compiled language,the translation is done ahead of time.The javascript engine actually compile the program on the fly and then immediately runs the compiled code. All relevant modern engines use just-in-time compilation for improved performance.
 
 <h2>Practise</h2>
-<ul>
+<ol>
 <li>
 ```Javascript
   const names = [
@@ -155,13 +155,35 @@ console.log(greetStudents(names))
 <li>
 1. Write a function called greet which take name and role as parameters. Use your function to greet all the your classmates.
 <div>Answer:
-```JavaScript
+```Javascript
 const greet=(name,role)=>{
   return `Hi Angelica,nice to meet you I am ${name} and i am ${role||'student'}`
 }
 console.log(greet('Raja'))
 ```
 </div>
-
 </li>
-</ul>
+<li>
+Qu.Write a function called greetStudents, which take an array of names. Use your function to greet all the your classmates.
+<div>
+```Javascript
+const names = [
+  'Pradip',
+  'Van',
+  'Thanh',
+  'Thanh',
+  'Ca',
+  'Joshua',
+  'Devendra',
+  'Anzhelika',
+  ]
+const nameCalling=(...arr)=>{
+  for (const element of arr) {
+    console.log(`Hi Angelica,my Name is ${element} nice to meet You`)
+  }
+}
+  nameCalling(...names)
+```
+</div>
+</li>
+</ol>

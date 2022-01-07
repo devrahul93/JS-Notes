@@ -170,5 +170,19 @@ const nameCalling=(...arr)=>{
 ```
 </div>
 </li>
+<li>
+Qu.Extract the numbers and calculate the total annual income of the person from the following text. ‘He earns 5000 euro from salary per month, 15000 euro annual bonus, 10000 euro online courses per month.?
+<div>
+```js
+const income = (salary, bonus, extra) => {
+  return `${(salary * 12)+bonus+extra} is his total income`;
+};
+
+console.log(income(5000, 15000, 10000));
+
+```
+</div>
+</li>
 
 </ol>
+```

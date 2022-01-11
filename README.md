@@ -192,15 +192,15 @@ Qu.In English language some words come more often than others to a sentence. Wri
 </div>
 </li>
 Qu.write function for palindrome with removing spaces and extra character
-```js
+<div style='color:red'>
+
 function palindrome(str) {
-  let newStr = str.replace(/[^A-Z0-9]/gi, '').toLowerCase()
-  let reverseStr = newStr.split('').reverse().join('')
+let newStr = str.replace(/[^a-z0-9]/gi, '').toLowerCase()
+let reverseStr = newStr.split('').reverse().join('')
 
 return newStr == reverseStr ? true : false
 }
 
-```
+</div>
 
 </ol>
-```

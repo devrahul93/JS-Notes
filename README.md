@@ -173,16 +173,34 @@ const nameCalling=(...arr)=>{
 <li>
 Qu.Extract the numbers and calculate the total annual income of the person from the following text. ‘He earns 5000 euro from salary per month, 15000 euro annual bonus, 10000 euro online courses per month.?
 <div>
-```js
+
 const income = (salary, bonus, extra) => {
-  return `${(salary * 12)+bonus+extra} is his total income`;
+return `${(salary * 12)+bonus+extra} is his total income`;
 };
 
 console.log(income(5000, 15000, 10000));
 
-```
 </div>
 </li>
+<li>
+Qu.In English language some words come more often than others to a sentence. Write a function called mostFrequentWords it takes a sentence or a paragraph as a parameter and return an array of objects. The object key is the word and its number of occurrence is the value. What are the ten most frequent words in a sentence or a paragraph of an English language.
+<div>
+```
+ const mostFrequentWords=()=>{
+   return()
+ }
+</div>
+</li>
+Qu.write function for palindrome with removing spaces and extra character
+```js
+function palindrome(str) {
+  let newStr = str.replace(/[^A-Z0-9]/gi, '').toLowerCase()
+  let reverseStr = newStr.split('').reverse().join('')
+
+return newStr == reverseStr ? true : false
+}
+
+```
 
 </ol>
 ```

@@ -138,18 +138,20 @@ This is a _statement_.This statement is made up of four _expressions_ .
 
 <li>
 Qu. Write a function called greet which take name and role as parameters. Use your function to greet all the your classmates.
-<div>Answer:
+
 ```js
-const greet=(name,role)=>{
-  return `Hi Angelica,nice to meet you I am ${name} and i am ${role||'student'}`
+const greet = (name, role) => {
+  return `Hi Angelica,nice to meet you I am ${name} and i am ${
+    role || 'student'
+  }`
 }
 console.log(greet('Raja'))
 ```
-</div>
+
 </li>
 <li>
 Qu.Write a function called greetStudents, which take an array of names. Use your function to greet all the your classmates.
-<div>
+
 ```js
 const names = [
   'Pradip',
@@ -160,19 +162,20 @@ const names = [
   'Joshua',
   'Devendra',
   'Anzhelika',
-  ]
-const nameCalling=(...arr)=>{
+]
+const nameCalling = (...arr) => {
   for (const element of arr) {
     console.log(`Hi Angelica,my Name is ${element} nice to meet You`)
   }
 }
-  nameCalling(...names)
+nameCalling(...names)
 ```
-</div>
+
 </li>
 <li>
 Qu.Extract the numbers and calculate the total annual income of the person from the following text. ‘He earns 5000 euro from salary per month, 15000 euro annual bonus, 10000 euro online courses per month.?
-<div>
+
+```Js
 
 const income = (salary, bonus, extra) => {
 return `${(salary * 12)+bonus+extra} is his total income`;
@@ -180,16 +183,18 @@ return `${(salary * 12)+bonus+extra} is his total income`;
 
 console.log(income(5000, 15000, 10000));
 
-</div>
+```
+
 </li>
 <li>
 Qu.In English language some words come more often than others to a sentence. Write a function called mostFrequentWords it takes a sentence or a paragraph as a parameter and return an array of objects. The object key is the word and its number of occurrence is the value. What are the ten most frequent words in a sentence or a paragraph of an English language.
-<div>
-```
- const mostFrequentWords=()=>{
+
+```Js
+const mostFrequentWords=()=>{
    return()
  }
-</div>
+```
+
 </li>
 Qu.write function for palindrome with removing spaces and extra character
 <div style='color:red'>
@@ -244,7 +249,8 @@ console.log(convertToRoman(915))
 </li>
 <li>
 Qu.Return Caesar Cypher which adds the character and add 13 to it.
-<div>
+
+```Js
 function rot13(str) {
   var alphabets = [
     'A',
@@ -337,7 +343,8 @@ return resultStr.join('')
 
 console.log(rot13('SERR PBQR PNZC'))
 
-</div>
+```
+
 </li>
 <li>
 qu.telephone number validation

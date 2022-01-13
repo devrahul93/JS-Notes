@@ -341,23 +341,23 @@ console.log(rot13('SERR PBQR PNZC'))
 </li>
 <li>
 qu.telephone number validation
-<div>
 
+```js
 function telephoneCheck(str) {
-let re=/^(1\s?)?(\d{3}|\(d{3}\)[/-/s]?)\d{3}[/-/s]?\d{4}$/
-//for optional we use question mark
-//it is optional to start with space
-//it is also optional to start with one
-//d is for how many digit in the{}
-//"|" it is or
+  let re = /^(1\s?)?(\d{3}|\(d{3}\)[/-/s]?)\d{3}[/-/s]?\d{4}$/
+  //for optional we use question mark
+  //it is optional to start with space
+  //it is also optional to start with one
+  //d is for how many digit in the{}
+  //"|" it is or
 
-return re.test(str);
+  return re.test(str)
 }
 
 telephoneCheck('555-555-5555')
 console.log('heelo')
+```
 
-</div>
 </li>
 <li>
 Qu.Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
@@ -373,7 +373,7 @@ function spinWords(string){
       copyStr.push(newStr[i].split('').reverse().join(''))
     }
   }
-  return copyStr.join('')
+  return copyStr.join('')g
 }
 ```
 

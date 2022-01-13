@@ -359,4 +359,23 @@ console.log('heelo')
 
 </div>
 </li>
+<li>
+Qu.Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
+
+```Js
+function spinWords(string){
+  let newStr=string.split(/(\s+));
+  let copyStr=[];
+  for(let i=0;i<newStr.length;i++){
+    if(newStr[i]<5){
+      copyStr.push(newStr[i])
+    }else{
+      copyStr.push(newStr[i].split('').reverse().join(''))
+    }
+  }
+  return copyStr.join('')
+}
+```
+
+</li>
 </ol>

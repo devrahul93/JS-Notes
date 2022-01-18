@@ -198,7 +198,6 @@ const mostFrequentWords=()=>{
 </li>
 <li>
 Qu.write function for palindrome with removing spaces and extra character
-```Js
 
 function palindrome(str) {
 let newStr = str.replace(/[^a-z0-9]/gi, '').toLowerCase()
@@ -207,7 +206,6 @@ let reverseStr = newStr.split('').reverse().join('')
 return newStr == reverseStr ? true : false
 }
 
-````
 </li>
 
 <li>
@@ -346,7 +344,7 @@ return resultStr.join('')
 
 console.log(rot13('SERR PBQR PNZC'))
 
-````
+```
 
 </li>
 <li>

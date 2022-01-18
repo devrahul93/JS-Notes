@@ -199,18 +199,20 @@ const mostFrequentWords=()=>{
 <li>
 Qu.write function for palindrome with removing spaces and extra character
 
+```Js
 function palindrome(str) {
 let newStr = str.replace(/[^a-z0-9]/gi, '').toLowerCase()
 let reverseStr = newStr.split('').reverse().join('')
 
-return newStr == reverseStr ? true : false
-}
+return newStr == reverseStr ? true : false}
+```
 
 </li>
 
 <li>
 Qu.Convert the given number into a roman numeral.
-<div>
+
+```Js
 function convertToRoman(num) {
   let defaultValue = ''
 
@@ -246,7 +248,8 @@ return defaultValue
 
 console.log(convertToRoman(915))
 
-</div>
+```
+
 </li>
 <li>
 Qu.Return Caesar Cypher which adds the character and add 13 to it.

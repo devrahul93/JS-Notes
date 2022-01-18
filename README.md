@@ -196,8 +196,9 @@ const mostFrequentWords=()=>{
 ```
 
 </li>
+<li>
 Qu.write function for palindrome with removing spaces and extra character
-<div style='color:red'>
+```Js
 
 function palindrome(str) {
 let newStr = str.replace(/[^a-z0-9]/gi, '').toLowerCase()
@@ -206,7 +207,9 @@ let reverseStr = newStr.split('').reverse().join('')
 return newStr == reverseStr ? true : false
 }
 
-</div>
+````
+</li>
+
 <li>
 Qu.Convert the given number into a roman numeral.
 <div>
@@ -343,7 +346,7 @@ return resultStr.join('')
 
 console.log(rot13('SERR PBQR PNZC'))
 
-```
+````
 
 </li>
 <li>
@@ -371,7 +374,7 @@ Qu.Write a function that takes in a string of one or more words, and returns the
 
 ```Js
 function spinWords(string){
-  let newStr=string.split(/(\s+));
+  let newStr=string.split(/(\s+)/);
   let copyStr=[];
   for(let i=0;i<newStr.length;i++){
     if(newStr[i]<5){

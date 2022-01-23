@@ -1,22 +1,26 @@
-function sumPairs(ints, s) {
-  // for (let i = 1; i < length; i++) {
-  //   for (let j = 0; j < i; j++) {
-  //     if (ints[i] + ints[j] === s) return [ints[j], ints[i]]
-  //   }
-  // }
+// input =  [(18, 20), (45, 2), (61, 12), (37, 6), (21, 21), (78, 9)]
+// output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
-  // let o
-  // let t
-  // const { length } = ints
-  for (let i = 1; i < ints.length; i++) {
-    for (let j = 0; j < i; j++) {
-      if (ints[i] + ints[j] === s) return [ints[j], ints[i]]
-    }
-  }
+// To be a senior, a member must be at least 55 years old and have a handicap greater than 7. In this croquet club, handicaps range from -2 to +26; the better the player the lower the handicap
 
-  // if (t === undefined && o === undefined) {
-  //   return undefined
+let Data = [
+  [45, 12],
+  [55, 21],
+  [19, -2],
+  [104, 20],
+]
 
-  // return [o, t] || undefined
+let result = ['Open', 'Senior', 'Open', 'Senior']
+
+function openOrSenior(data) {
+  let result = String
+  let arr = []
+
+  data.forEach((element) => {
+    element[0] >= 55 && element[1] > 7 ? arr.push('Senior') : arr.push('Open')
+  })
+
+  return arr
 }
-console.log(sumPairs([10, 5, 2, 3, 7, 5], 10))
+
+console.log(openOrSenior(Data))

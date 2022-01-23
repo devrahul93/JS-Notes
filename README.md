@@ -442,4 +442,35 @@ let newCC = cc.split('').reverse()
 ```
 
 </li>
+
+<li>
+Given a list of integers and a single sum value, return the first two values (parse from the left please) in order of appearance that add up to form the sum.
+
+<p>This one take more execution time</p>
+
+```Js
+function sumPairs(ints, s) {
+  for (let i = 1; i < ints.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (ints[i] + ints[j] === s) return [ints[j], ints[i]]
+    }
+  }
+}
+
+```
+
+<p>This one is fast</p>
+
+```Js
+function sumPairs(ints, s) {
+   const intsSet = new Set();
+  for (let i = 0; i < ints.length; i++) {
+    let currInt = ints[i];
+    if (intsSet.has(s - currInt)) return [s - currInt, currInt];
+    else intsSet.add(currInt);
+  }
+}
+```
+
+</li>
 </ol>

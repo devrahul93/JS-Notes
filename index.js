@@ -1,22 +1,22 @@
-function maskify(cc) {
-  let newCC = cc.split('').reverse()
-  let numCC = newCC.map((x) => +x)
-  let z = []
-  // for (i = 0; i < newCC.length - 4; i++) {
-  //   z.push(newCC[i])
+function sumPairs(ints, s) {
+  // for (let i = 1; i < length; i++) {
+  //   for (let j = 0; j < i; j++) {
+  //     if (ints[i] + ints[j] === s) return [ints[j], ints[i]]
+  //   }
   // }
 
-  let number = newCC.length - (newCC.length - 4)
-
-  for (i = 0; i < number; i++) {
-    z.push(newCC[i])
+  // let o
+  // let t
+  // const { length } = ints
+  for (let i = 1; i < ints.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (ints[i] + ints[j] === s) return [ints[j], ints[i]]
+    }
   }
 
-  for (i = 0; i < newCC.length - 4; i++) {
-    z.push('*')
-  }
+  // if (t === undefined && o === undefined) {
+  //   return undefined
 
-  return z.reverse().join('')
+  // return [o, t] || undefined
 }
-
-console.log(maskify('12345676789000'))
+console.log(sumPairs([10, 5, 2, 3, 7, 5], 10))

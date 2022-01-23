@@ -1,13 +1,22 @@
-function telephoneCheck(str) {
-  let re = /^(1\s?)?(\d{3}|\(d{3}\)[/-/s]?)\d{3}[/-/s]?\d{4}$/
-  //for optional we use question mark
-  //it is optional to start with space
-  //it is also optional to start with one
-  //d is for how many digit in the{}
-  //"|" it is or
+function maskify(cc) {
+  let newCC = cc.split('').reverse()
+  let numCC = newCC.map((x) => +x)
+  let z = []
+  // for (i = 0; i < newCC.length - 4; i++) {
+  //   z.push(newCC[i])
+  // }
 
-  return re.test(str)
+  let number = newCC.length - (newCC.length - 4)
+
+  for (i = 0; i < number; i++) {
+    z.push(newCC[i])
+  }
+
+  for (i = 0; i < newCC.length - 4; i++) {
+    z.push('*')
+  }
+
+  return z.reverse().join('')
 }
 
-telephoneCheck('555-555-5555')
-console.log('heelo')
+console.log(maskify('12345676789000'))

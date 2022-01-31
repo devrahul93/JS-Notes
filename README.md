@@ -501,4 +501,18 @@ function openOrSenior(data) {
 ```
 
 </li>
+
+<li>
+Qu. Write a function called stat which calculate mean, median and range of an array.
+
+     const numbers = [80, 85,70, 90, 65, 90, 80];
+     stat(numbers).mean()
+     stat(numbers).median()
+     stat(numbers).range()
+
+```Js
+ console.log(stat)
+```
+
+</li>
 </ol>

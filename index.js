@@ -1,47 +1,78 @@
-'use strict'
-// Write a function called convertArrayToObject which can convert the array to a structured object.
-//     const students = [
-//         ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
-//         ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
-//       ]
+// Copy the student object to newStudent without mutating the original object. In the new object add the following ?
 
-//     console.log(convertArrayToObject(students))
-//     [
-//       {
-//         name: 'David',
-//         skills: ['HTM','CSS','JS','React'],
-//         scores: [98,85,90,95]
-//       },
-//       {
-//         name: 'John',
-//         skills: ['HTM','CSS','JS','React'],
-//         scores: [85, 80,85,80]
+// Add Bootstrap with level 8 to the front end skill sets
+// Add Express with level 9 to the back end skill sets
+// Add SQL with level 8 to the data base skill sets
+// Add SQL without level to the data science skill sets
+//     const student = {
+//       name: 'David',
+//       age: 25,
+//       skills: {
+//         frontEnd: [
+//           { skill: 'HTML', level: 10 },
+//           { skill: 'CSS', level: 8 },
+//           { skill: 'JS', level: 8 },
+//           { skill: 'React', level: 9 }
+//         ],
+//         backEnd: [
+//           { skill: 'Node',level: 7 },
+//           { skill: 'GraphQL', level: 8 },
+//         ],
+//         dataBase:[
+//           { skill: 'MongoDB', level: 7.5 },
+//         ],
+//         dataScience:['Python', 'R', 'D3.js']
 //       }
-//     ]
+//     }
 
-const students = [
-  ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
-  ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]],
-]
+//   ```
+//  The copied object output should look like this:
+// ```js
+//     {
+//     name: 'David',
+//     age: 25,
+//     skills: {
+//       frontEnd: [
+//         {skill: 'HTML',level: 10},
+//         {skill: 'CSS',level: 8},
+//         {skill: 'JS',level: 8},
+//         {skill: 'React',level: 9},
+//         {skill: 'BootStrap',level: 8}
+//       ],
+//       backEnd: [
+//         {skill: 'Node',level: 7},
+//         {skill: 'GraphQL',level: 8},
+//         {skill: 'Express',level: 9}
+//       ],
+//       dataBase: [
+//         { skill: 'MongoDB',level: 7.5},
+//         { skill: 'SQL',level: 8}
+//       ],
+//       dataScience: ['Python','R','D3.js','SQL']
+//     }
+//   }
 
-const convertArrayToObject = (arr) => {
-  const entries = new Map([
-    ['name', arr[0][0]],
-    ['skills', arr[0][1]],
-    ['scores', arr[0][2]],
-  ])
-
-  const entries1 = new Map([
-    ['name', arr[1][0]],
-    ['skills', arr[1][1]],
-    ['scores', arr[1][2]],
-  ])
-
-  const obj = Object.fromEntries(entries)
-  const obj1 = Object.fromEntries(entries1)
-
-  return [obj, obj1]
+const student = {
+  name: 'David',
+  age: 25,
+  skills: {
+    frontEnd: [
+      { skill: 'HTML', level: 10 },
+      { skill: 'CSS', level: 8 },
+      { skill: 'JS', level: 8 },
+      { skill: 'React', level: 9 },
+    ],
+    backEnd: [
+      { skill: 'Node', level: 7 },
+      { skill: 'GraphQL', level: 8 },
+    ],
+    dataBase: [{ skill: 'MongoDB', level: 7.5 }],
+    dataScience: ['Python', 'R', 'D3.js'],
+  },
 }
+student.skills.frontEnd.push({ skill: 'Bootstrap', level: 8 })
 
-console.log(convertArrayToObject(students))
-convertArrayToObject(students)
+student.skills.backEnd.push({ skill: 'Express', level: 9 })
+
+student.skills.dataBase.push({ skill: 'SQL', level: 8 })
+student.skills.dataScience.push('SQL')

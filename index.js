@@ -1,32 +1,16 @@
-const numbers = [80, 85, 70, 90, 65, 90, 80]
+// A junior developer structure student name, skills and
+// score in array of arrays which may not easy to read.
+// Destruction the following array name to name, skills
+// array to skills, scores array to scores, JavaScript score
+// to jsScore and React score to reactScore variable.
 
-const stat = (num) => {
-  let total = num.reduce((x, y) => x + y)
-  let sortedNum = num.sort()
+// const student = ['David', ['HTM', 'CSS', 'JS', 'React'],
+//  [98, 85, 90, 95]]
+//   console.log(name, skills, scores)
+//   console.log(jsScore, reactScore)
 
-  return {
-    mean: function () {
-      return total / num.length
-    },
+const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
 
-    median: function () {
-      if (sortedNum.length % 2) {
-        return sortedNum[sortedNum.length / 2 - 0.5]
-      } else {
-        return (
-          (sortedNum[sortedNum.length / 3] +
-            sortedNum[sortedNum.length / 3 + 1]) /
-          2
-        )
-      }
-    },
-
-    range: function () {
-      return sortedNum[sortedNum.length - 1] - sortedNum[0]
-    },
-  }
-}
-
-stat(numbers).mean()
-stat(numbers).median()
-stat(numbers).range()
+let [name, skills, scores] = student
+let jsScore = scores[2]
+let reactScore = scores[3]

@@ -636,6 +636,8 @@ Copy the student object to newStudent without mutating the original object. In t
     Add SQL without level to the data science skill sets
     </li>
 </ol>
+
+```Js
     const student = {
       name: 'David',
       age: 25,
@@ -656,6 +658,8 @@ Copy the student object to newStudent without mutating the original object. In t
         dataScience:['Python', 'R', 'D3.js']
       }
     }
+
+```
 
 The copied object output should look like this:
 

@@ -639,7 +639,6 @@ Copy the student object to newStudent without mutating the original object. In t
     </li>
 
 </ol>
-
     const student = {
       name: 'David',
       age: 25,
@@ -663,6 +662,7 @@ Copy the student object to newStudent without mutating the original object. In t
 
 The copied object output should look like this:
 
+```Object
 {
 name: 'David',
 age: 25,
@@ -686,6 +686,7 @@ dataBase: [
 dataScience: ['Python','R','D3.js','SQL']
 }
 }
+```
 
 </li>
 </ol>

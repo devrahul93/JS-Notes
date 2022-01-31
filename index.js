@@ -1,78 +1,43 @@
-// Copy the student object to newStudent without mutating the original object. In the new object add the following ?
+// 'Facebook, Google, Microsoft, Apple, IBM,Oracle, Amazon'. This string contains big IT companies. Write a function called companiesWithTwoOs check if the company
+// has two os are return an array containing the companies.
 
-// Add Bootstrap with level 8 to the front end skill sets
-// Add Express with level 9 to the back end skill sets
-// Add SQL with level 8 to the data base skill sets
-// Add SQL without level to the data science skill sets
-//     const student = {
-//       name: 'David',
-//       age: 25,
-//       skills: {
-//         frontEnd: [
-//           { skill: 'HTML', level: 10 },
-//           { skill: 'CSS', level: 8 },
-//           { skill: 'JS', level: 8 },
-//           { skill: 'React', level: 9 }
-//         ],
-//         backEnd: [
-//           { skill: 'Node',level: 7 },
-//           { skill: 'GraphQL', level: 8 },
-//         ],
-//         dataBase:[
-//           { skill: 'MongoDB', level: 7.5 },
-//         ],
-//         dataScience:['Python', 'R', 'D3.js']
-//       }
-//     }
+const companies = 'Facebook,Google,Microsoft,Apple,IBM,Oracle,Amazon'
 
-//   ```
-//  The copied object output should look like this:
-// ```js
-//     {
-//     name: 'David',
-//     age: 25,
-//     skills: {
-//       frontEnd: [
-//         {skill: 'HTML',level: 10},
-//         {skill: 'CSS',level: 8},
-//         {skill: 'JS',level: 8},
-//         {skill: 'React',level: 9},
-//         {skill: 'BootStrap',level: 8}
-//       ],
-//       backEnd: [
-//         {skill: 'Node',level: 7},
-//         {skill: 'GraphQL',level: 8},
-//         {skill: 'Express',level: 9}
-//       ],
-//       dataBase: [
-//         { skill: 'MongoDB',level: 7.5},
-//         { skill: 'SQL',level: 8}
-//       ],
-//       dataScience: ['Python','R','D3.js','SQL']
-//     }
-//   }
+const companiesWithTwoOs = (cmp) => {
+  let newCmp = cmp.match(/\w*(\w)\w*\1\w*/gm)
+  let arr = []
+  newCmp.forEach((element) => {
+    if (element.split('').includes('o')) {
+      arr.push(element)
+    }
+  })
 
-const student = {
-  name: 'David',
-  age: 25,
-  skills: {
-    frontEnd: [
-      { skill: 'HTML', level: 10 },
-      { skill: 'CSS', level: 8 },
-      { skill: 'JS', level: 8 },
-      { skill: 'React', level: 9 },
-    ],
-    backEnd: [
-      { skill: 'Node', level: 7 },
-      { skill: 'GraphQL', level: 8 },
-    ],
-    dataBase: [{ skill: 'MongoDB', level: 7.5 }],
-    dataScience: ['Python', 'R', 'D3.js'],
-  },
+  return arr
+
+  // EXPLANATION
+
+  // NODE                     EXPLANATION
+  // --------------------------------------------------------------------------------
+  //   \w*                      word characters (a-z, A-Z, 0-9, _) (0 or
+  //                            more times (matching the most amount
+  //                            possible))
+  // --------------------------------------------------------------------------------
+  //   (                        group and capture to \1:
+  // --------------------------------------------------------------------------------
+  //     \w                       word characters (a-z, A-Z, 0-9, _)
+  // --------------------------------------------------------------------------------
+  //   )                        end of \1
+  // --------------------------------------------------------------------------------
+  //   \w*                      word characters (a-z, A-Z, 0-9, _) (0 or
+  //                            more times (matching the most amount
+  //                            possible))
+  // --------------------------------------------------------------------------------
+  //   \1                       what was matched by capture \1
+  // --------------------------------------------------------------------------------
+  //   \w*                      word characters (a-z, A-Z, 0-9, _) (0 or
+  //                            more times (matching the most amount
+  //                            possible))
 }
-student.skills.frontEnd.push({ skill: 'Bootstrap', level: 8 })
 
-student.skills.backEnd.push({ skill: 'Express', level: 9 })
-
-student.skills.dataBase.push({ skill: 'SQL', level: 8 })
-student.skills.dataScience.push('SQL')
+companiesWithTwoOs(companies)
+console.log(companiesWithTwoOs(companies))

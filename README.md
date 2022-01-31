@@ -689,5 +689,53 @@ dataScience: ['Python','R','D3.js','SQL']
 }
 ```
 
+```Js
+const student = {
+  name: 'David',
+  age: 25,
+  skills: {
+    frontEnd: [
+      { skill: 'HTML', level: 10 },
+      { skill: 'CSS', level: 8 },
+      { skill: 'JS', level: 8 },
+      { skill: 'React', level: 9 },
+    ],
+    backEnd: [
+      { skill: 'Node', level: 7 },
+      { skill: 'GraphQL', level: 8 },
+    ],
+    dataBase: [{ skill: 'MongoDB', level: 7.5 }],
+    dataScience: ['Python', 'R', 'D3.js'],
+  },
+}
+student.skills.frontEnd.push({ skill: 'Bootstrap', level: 8 })
+
+student.skills.backEnd.push({ skill: 'Express', level: 9 })
+
+student.skills.dataBase.push({ skill: 'SQL', level: 8 })
+student.skills.dataScience.push('SQL')
+
+```
+
 </li>
+
+<li>
+<ol type='i'>
+<li>
+'Facebook, Google, Microsoft, Apple, IBM,Oracle, Amazon'. This string contains big IT companies. Write a function called companiesWithTwoOs check if the company has two os are return an array containing the companies.
+</li>
+<li>
+Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
+</li>
+<li>
+Write the function called tenMostSpokenLanaguages, it takes the countriesobject and return the array of objects. The language is key and value is the number of places the language is spoken.
+</li>
+</ol>
+
+```Js
+console.log()
+```
+
+</li>
+
 </ol>

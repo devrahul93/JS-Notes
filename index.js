@@ -1,10 +1,8 @@
-// Declare an array called shoppingBasket and put at least 5 items you commonly put to your shopping basket.
+let number = [3, 4, 100, 6, 7]
 
-let shoppingBasket = []
+const sumOfAllNumbers = (num) => {
+  return num.reduce((x, y) => x + y)
+}
 
-shoppingBasket.push('Saamosa', 'chop')
-shoppingBasket.unshift('kela')
-shoppingBasket.push('rosogulla', 'peda', 'barfi', 'ladu')
-shoppingBasket.shift()
-
-console.log(shoppingBasket.indexOf('peda'))
+console.log(sumOfAllNumbers(number))
+sumOfAllNumbers(number)

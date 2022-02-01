@@ -1,38 +1,17 @@
-// Write a function called checkDataTypes it takes an array and a data type. It returns true if all the array items are the same data types.
+// Declare firstName, lastName, age variables and assign your first name, your last name and your age to the variables.
 
-// const numbers = [1, 3, 4]
-// const names = ['Asab', 'Eyob']
-// const bools = [true, false, true, true, false]
-// const mixedData = ['Asab', 'JS', true, 2019, { name: 'Asab', lang: 'JS' }]
-// const obj = [{ name: 'Asab', lang: 'JS' }]
-//       console.log(checkDataTypes(numbers, 'number')) // true
-//       console.log(checkDataTypes(numbers, 'string')) // false
-//       console.log(checkDataTypes(names, 'string')) // true
-//       console.log(checkDataTypes(bool, 'boolean')) // true
-//       console.log(checkDataTypes(mixedData, 'boolean')) // false
-//       console.log(checkDataTypes(obj, 'object')) // true
+// Concatenate the firstName , a space and lastName variable and assigned to a fullName variable.
 
-const numbers = [1, 3, 4]
-const names = ['Asab', 'Eyob']
-const bool = [true, false, true, true, false]
-const mixedData = ['Asab', 'JS', true, 2019, { name: 'Asab', lang: 'JS' }]
-const obj = [{ name: 'Asab', lang: 'JS' }]
+// Check if your name is long or short. If the length of your first name is greater than 7, you have a long name else you have a short name
 
-const checkDataTypes = (arr, dataType) => {
-  let bool = Boolean
-  for (let i = 0; i < arr.length; i++) {
-    if (typeof arr[i] == dataType) {
-      bool = true
-    } else {
-      bool = false
-    }
-  }
-  return bool
+const firstName = 'Pankaj'
+const lastName = 'Dubey'
+let age = 30
+
+let fullName = `${firstName} ${lastName}`
+
+let cheker = (name) => {
+  return name.split('').length >= 7 ? `it is too big` : `it is ok`
 }
-
-console.log(checkDataTypes(numbers, 'number')) // true
-console.log(checkDataTypes(numbers, 'string')) // false
-console.log(checkDataTypes(names, 'string')) // true
-console.log(checkDataTypes(bool, 'boolean')) // true
-console.log(checkDataTypes(mixedData, 'boolean')) // false
-console.log(checkDataTypes(obj, 'object')) // true
+console.log(cheker(firstName))
+cheker(firstName)

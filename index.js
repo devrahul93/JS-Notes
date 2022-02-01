@@ -1,43 +1,17 @@
-// 'Facebook, Google, Microsoft, Apple, IBM,Oracle, Amazon'. This string contains big IT companies. Write a function called companiesWithTwoOs check if the company
-// has two os are return an array containing the companies.
+import { countries } from './data.js'
 
-const companies = 'Facebook,Google,Microsoft,Apple,IBM,Oracle,Amazon'
+// console.log(countries)
+//find countries with initial
 
-const companiesWithTwoOs = (cmp) => {
-  let newCmp = cmp.match(/\w*(\w)\w*\1\w*/gm)
-  let arr = []
-  newCmp.forEach((element) => {
-    if (element.split('').includes('o')) {
-      arr.push(element)
+const firstWord = (initial) => {
+  let caps = initial.toUpperCase()
+  let word = []
+  for (let i = 0; i < countries.length; i++) {
+    if (countries[i].startsWith(caps)) {
+      word.push(countries[i])
     }
-  })
-
-  return arr
-
-  // EXPLANATION
-
-  // NODE                     EXPLANATION
-  // --------------------------------------------------------------------------------
-  //   \w*                      word characters (a-z, A-Z, 0-9, _) (0 or
-  //                            more times (matching the most amount
-  //                            possible))
-  // --------------------------------------------------------------------------------
-  //   (                        group and capture to \1:
-  // --------------------------------------------------------------------------------
-  //     \w                       word characters (a-z, A-Z, 0-9, _)
-  // --------------------------------------------------------------------------------
-  //   )                        end of \1
-  // --------------------------------------------------------------------------------
-  //   \w*                      word characters (a-z, A-Z, 0-9, _) (0 or
-  //                            more times (matching the most amount
-  //                            possible))
-  // --------------------------------------------------------------------------------
-  //   \1                       what was matched by capture \1
-  // --------------------------------------------------------------------------------
-  //   \w*                      word characters (a-z, A-Z, 0-9, _) (0 or
-  //                            more times (matching the most amount
-  //                            possible))
+  }
+  console.log(word)
 }
 
-companiesWithTwoOs(companies)
-console.log(companiesWithTwoOs(companies))
+firstWord('a')

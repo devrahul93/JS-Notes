@@ -1,15 +1,20 @@
-// Write the function called tenMostSpokenLanaguages, it takes the countriesobject and return the array of objects. The language is key and value is the number of places the language is spoken.
-
-import { objCountries } from './data.js'
-
-// console.log(objCountries)
-
-// for (const property in objCountries) {
-//   console.log(`${property}:${objCountries[property]}`)
+// function add(a, b) {
+//   if (typeof b === 'undefined')
+//     return function (c) {
+//       return a + c
+//     }
+//   return a + b
 // }
 
-objCountries.forEach((element) => {
-  let lang = element.languages.join()
-  //   lang.push(element.languages)
-  console.log(typeof lang)
-})
+// let add = (a, b) => (b == +b ? a + b : (c) => a + c)
+
+function add(a, b) {
+  return b == +b
+    ? a + b
+    : function (c) {
+        return a + c
+      }
+}
+
+console.log(add(2)(3))
+console.log(add(2 + 3))

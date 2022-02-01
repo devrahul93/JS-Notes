@@ -822,4 +822,15 @@ objCountries.forEach((element) => {
 
 </li>
 
+<li>
+Make a function called add which give truthy value when add(a, b) === add(a)(b)
+
+```Js
+WILL DO IT LATER
+    console.log(add(2,3)) //5
+    console.log(add(2)(3)) //5
+    console.log(add(2,3) === add(2)(3)) // true
+```
+
+</li>
 </ol>

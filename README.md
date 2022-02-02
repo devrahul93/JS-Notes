@@ -947,4 +947,18 @@ console.log(randomNumbers())
 
 <li>
 </li>
+
+<li>
+Declare a function called sumOfEven, it takes a positive integer as a parameter and it returns the sum of all numbers
+
+```Js
+let sumOfAll = (n) => {
+  return (n * (n + 1)) / 2
+}
+
+console.log(sumOfAll(10))
+
+```
+
+</li>
 </ol>

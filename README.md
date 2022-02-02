@@ -928,4 +928,23 @@ listShoppingItems(list)
 ```
 
 </li>
+Declare a function called randomNumbers which can return an array of 7 numbers which range 1-20.
+
+```Js
+
+let randomNumbers = () => {
+  var arr = []
+  while (arr.length < 7) {
+    var r = Math.floor(Math.random() * 20) + 1
+    if (arr.indexOf(r) === -1) arr.push(r)
+  }
+  return arr
+}
+
+console.log(randomNumbers())
+
+```
+
+<li>
+</li>
 </ol>

@@ -1,17 +1,22 @@
-// Declare a function called listShoppingItems, it takes your shopping basket array you declared at question 4 as a parameter and it prints out the capitalized shopping items.
+// Declare a function called randomNumbers which can return an array of 7 numbers which range 1-20.
 
-const list = ['Banana', 'Tomato', 'Milk', 'Egg']
+// randomNumbers()
+// [9,4, 3, 5, 2, 8, 2]
 
-let listShoppingItems = (list) => {
-  let arr = []
-
-  list.forEach((element) => arr.push(element.toUpperCase()))
-  return arr.toString()
+let randomNumbers = () => {
+  var arr = []
+  while (arr.length < 7) {
+    var r = Math.floor(Math.random() * 20) + 1
+    if (arr.indexOf(r) === -1) arr.push(r)
+  }
+  return arr
 }
 
-console.log(listShoppingItems(list))
-listShoppingItems(list)
-// BANANA
-// TOMATO
-// MILK
-// EGG
+console.log(randomNumbers())
+
+// var arr = []
+// while (arr.length < 8) {
+//   var r = Math.floor(Math.random() * 20) + 1
+//   if (arr.indexOf(r) === -1) arr.push(r)
+// }
+// console.log(arr)

@@ -1058,5 +1058,17 @@ const findMax = (...a) => {
 console.log(findMax(0, 10, -2))
 ```
 
+```Js
+var arr = [0, 10, 1]
+var largest = arr[0]
+
+for (var i = 0; i < arr.length; i++) {
+  if (largest < arr[i]) {
+    largest = arr[i]
+  }
+}
+console.log(largest)
+```
+
 </li>
 </ol>

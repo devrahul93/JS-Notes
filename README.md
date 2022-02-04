@@ -1045,4 +1045,18 @@ console.log(fizzBuzz())
 ```
 
 </li>
+
+<li>
+Maximum Math.max returns its largest argument. We can build something like that now. Write a function findMax that takes three arguments and returns their maxiumum. Without method Math.max method.
+
+```js
+const findMax = (...a) => {
+  let value = Math.max(...a)
+  console.log(value)
+}
+
+console.log(findMax(0, 10, -2))
+```
+
+</li>
 </ol>

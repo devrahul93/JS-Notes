@@ -1086,5 +1086,24 @@ console.log(reverseArray(['a', 'b', 'c']))
 </li>
 
 <li>
+Modifying an array Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and returns the array. If the array length is less than five it return ‘item not found’.
+
+```Js
+const modifyArray = (arr) => {
+  let newArr = []
+
+  if (arr.length < 5) {
+    newArr.push('Not Found')
+  } else {
+    arr.splice(4, 1, arr[4].toUpperCase())
+    newArr.push(arr)
+    // newArr.push(arr[0], arr[1], arr[2], arr[3], arr[4].toUpperCase(), arr[5])
+  }
+
+  return newArr
+}
+
+```
+
 </li>
 </ol>

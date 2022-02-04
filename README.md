@@ -998,6 +998,24 @@ let line
 for (let line = '#'; line.length < 8; line += '#') console.log(line)
 ```
 
+Another Solution
+
+```Js
+const triangle = (num) => {
+  let triangle = []
+  let line = ''
+  do {
+    // console.log(line)
+    line = line + '#'
+    triangle.push(line)
+  } while (line.length < num)
+
+  return triangle
+}
+
+console.log(triangle(8))
+```
+
 </li>
 
 <li>

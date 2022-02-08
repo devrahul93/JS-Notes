@@ -1,25 +1,12 @@
-// Modifying an array Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and returns the array. If the array length is less than five it return ‘item not found’.
+// 6.Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique
 
-// console.log(modifyArray(["Avocado", "Tomato", "Potato","Mango", "Lemon","Carrot"]);
-// // →["Avocado", "Tomato", "Potato","Mango", "LEMON", "Carrot"]
-// console.log(modifyArray(["Google", "Facebook","Apple", "Amazon","Microsoft",  "IBM"]);
-// // →["Google", "Facebook","Apple", "Amazon","MICROSOFT",  "IBM"]
-// console.log(modifyArray(["Google", "Facebook","Apple", "Amazon"]);
-// // →"Not Found"
-const modifyArray = (arr) => {
-  let newArr = []
-
-  if (arr.length < 5) {
-    newArr.push('Not Found')
-  } else {
-    arr.splice(4, 1, arr[4].toUpperCase())
-    newArr.push(arr)
-    // newArr.push(arr[0], arr[1], arr[2], arr[3], arr[4].toUpperCase(), arr[5])
+;(function sevenRandomNumbers() {
+  let arr = []
+  while (arr.length < 8) {
+    let r = Math.floor(Math.random() * 10)
+    if (arr.indexOf(r) === -1) {
+      arr.push(r)
+    }
   }
-
-  return newArr
-}
-
-console.log(
-  modifyArray(['Avocado', 'Tomato', 'Potato', 'Mango', 'Lemon', 'Carrot'])
-)
+  console.log(arr)
+})()

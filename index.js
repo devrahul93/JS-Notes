@@ -1,12 +1,7 @@
-// 6.Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique
+// Write a function which takes any number of arguments and return the sum of the arguments
 
-;(function sevenRandomNumbers() {
-  let arr = []
-  while (arr.length < 8) {
-    let r = Math.floor(Math.random() * 10)
-    if (arr.indexOf(r) === -1) {
-      arr.push(r)
-    }
-  }
-  console.log(arr)
-})()
+const sum = (...value) => {
+  return value.reduce((a, b) => a + b)
+}
+
+console.log(sum(1, 2, 3))

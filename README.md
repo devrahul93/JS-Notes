@@ -1137,4 +1137,16 @@ console.log(sum(1, 2, 3))
 ```
 
 </li>
+
+<li>
+Write a function which removes items from the middle of an array and replace with three items.
+
+```Js
+const removeMiddleItem = (arr, ...value) => {
+  return [arr[0], ...value, arr[arr.length - 1]]
+}
+console.log(removeMiddleItem([1, 2, 3], 4, 5, 6))
+```
+
+</li>
 </ol>

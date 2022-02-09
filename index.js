@@ -1,14 +1,9 @@
-//Write a function which takes an array parameter and returns an array of the data types of each item:
+//Create a function which filter ages greater than 18.
+const ages = [35, 30, 17, 18, 15, 22, 16, 20]
 
-const arr = ['Asabeneh', 100, true, null, undefined, { job: 'teaching' }]
-const mixedData = ['John', 25, 'David', 30, 'Sara', 22]
-const checkDatatTypes = (value) => {
-  let array = []
-  value.forEach((element) => array.push(typeof element))
-  return array
+const agesGreaterEighteen = (num) => {
+  return num.filter((value) => value > 18)
 }
 
-console.log(checkDatatTypes(arr))
-//['string', 'number', 'boolean', 'object', 'undefined', 'object']
-console.log(checkDatatTypes(mixedData))
-//['string', 'number', 'string', 'number', 'string', 'number']
+console.log(agesGreaterEighteen(ages))
+//[35, 30, 22, , 20];

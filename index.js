@@ -1,17 +1,13 @@
-// Create a function that takes two strings and returns true if the first argument ends with the second argument; otherewise return false . Take two strings as arguments. Determine if second string matches ending of first string. Return boolean value. Example
+// Write a function which count the number of occurrence of words in a paragraph or a sentence.The function countWords takes a paragraph and two words as parameters. It compare which word is most frequently occurred in the paragraph.
 
-// yourFunc("integrity", "ity")
-// true
-// yourFunc("integration", "tio")
-// false
-// yourFunc("connection", "sion")
-// false
-// yourFunc("connection", "tion")
-// true
+const paragraph =
+  'I love teaching. If you do not love teaching what else can you love. I love JavaScript if you do not love something which can give life to your application what else can you love.'
 
-const yourFunc = (word, endWrd) => {
-  let result = word.endsWith(endWrd)
-  console.log(result)
+const countWords = (para, word1, word2) => {
+  return para.split(word1).length > para.split(word2).length
+    ? `The word ${word1} more frequently occured than ${word2}`
+    : `The word ${word2} more frequently occured than ${word1}`
 }
 
-console.log(yourFunc('connection', 'tion'))
+console.log(countWords(paragraph, 'love', 'you'))
+//The word love more frequently occurred than you.

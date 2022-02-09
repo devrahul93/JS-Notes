@@ -1212,7 +1212,7 @@ console.log(checkDatatTypes(mixedData))
 </li>
 
 <li>
-Create a function which filter ages greater than 18.
+Create a function which filter ages greater than 18 and Write a function which calculate the average age of the group.
 
 ```Js
 const ages = [35, 30, 17, 18, 15, 22, 16, 20]
@@ -1223,6 +1223,16 @@ const agesGreaterEighteen = (num) => {
 
 console.log(agesGreaterEighteen(ages))
 //[35, 30, 22, , 20];
+```
+
+```Js
+const ages = [35, 30, 17, 18, 15, 22, 16, 20]
+const averageAge = (num) => {
+  return Math.round(num.reduce((a, b) => a + b) / num.length)
+}
+
+console.log(averageAge(ages))
+//22
 ```
 
 </li>

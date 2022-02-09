@@ -1,13 +1,14 @@
-// Write a function which count the number of occurrence of words in a paragraph or a sentence.The function countWords takes a paragraph and two words as parameters. It compare which word is most frequently occurred in the paragraph.
+//Write a function which takes an array parameter and returns an array of the data types of each item:
 
-const paragraph =
-  'I love teaching. If you do not love teaching what else can you love. I love JavaScript if you do not love something which can give life to your application what else can you love.'
-
-const countWords = (para, word1, word2) => {
-  return para.split(word1).length > para.split(word2).length
-    ? `The word ${word1} more frequently occured than ${word2}`
-    : `The word ${word2} more frequently occured than ${word1}`
+const arr = ['Asabeneh', 100, true, null, undefined, { job: 'teaching' }]
+const mixedData = ['John', 25, 'David', 30, 'Sara', 22]
+const checkDatatTypes = (value) => {
+  let array = []
+  value.forEach((element) => array.push(typeof element))
+  return array
 }
 
-console.log(countWords(paragraph, 'love', 'you'))
-//The word love more frequently occurred than you.
+console.log(checkDatatTypes(arr))
+//['string', 'number', 'boolean', 'object', 'undefined', 'object']
+console.log(checkDatatTypes(mixedData))
+//['string', 'number', 'string', 'number', 'string', 'number']

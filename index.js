@@ -1,9 +1,8 @@
-//Write a function which calculate the average age of the group.
+let arr = [1, 2, 3, 4, 5]
 
-const ages = [35, 30, 17, 18, 15, 22, 16, 20]
-const averageAge = (num) => {
-  return Math.round(num.reduce((a, b) => a + b) / num.length)
+function shuffle(array) {
+  let newArr = array.sort(() => Math.random() - 0.5)
+  return newArr
 }
 
-console.log(averageAge(ages))
-//22
+console.log(shuffle(arr))

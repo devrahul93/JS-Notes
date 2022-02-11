@@ -1555,7 +1555,7 @@ console.log(addUserSkill(users, 'Raja', ['React', 'Js']))
 </li>
 
 <li>
-<ol>
+<ol type='1'>
 <li>
 Print the following pattern using loop and console.log(). (2.5 pts)
 
@@ -1579,6 +1579,7 @@ for(let i='#';i.length<8;i+='#'){
 <li>
 Print the following pattern using loop and console.log(). (2.5 pts)
 
+```Md
 0 x 0 = 0
 1 x 1 = 1
 2 x 2 = 4
@@ -1590,9 +1591,19 @@ Print the following pattern using loop and console.log(). (2.5 pts)
 8 x 8 = 64
 9 x 9 = 81
 10 x 10 = 100
+```
 
 ```Js
+for (var input = 0; input <= 10; input++) {
+  console.log(`${input}×${input}=${input * input}`)
+}
 
+//Another Method
+
+let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+num.forEach((element) =>
+  console.log(`${element}×${element}=${element * element}`)
+)
 ```
 
 </li>

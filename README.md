@@ -1444,8 +1444,11 @@ console.log(checkUniqueness(arrTwo))
 ```
 
 </li>
+
+<li>
 Write a function which filter users who has scoresGreaterThan85, Write a function which addUser to the user array only if the user does not exist. Write a function which addUserSkill which can add skill to a user only if the user exist. Write a function which editUser if the user exist in the users array.
 
+```Js
 const users = [
 {
 name:'Brook',
@@ -1490,6 +1493,7 @@ skills:['HTM', 'CSS', 'JS'],
 age:20
 }
 ];
+```
 
 ```Js
 
@@ -1547,6 +1551,8 @@ function addUserSkill(user, name, skill) {
 
 console.log(addUserSkill(users, 'Raja', ['React', 'Js']))
 ```
+
+</li>
 
 <li>
 <ol>

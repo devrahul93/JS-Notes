@@ -1506,6 +1506,28 @@ function scoresGreaterThan85(user) {
 scoresGreaterThan85(users)
 ```
 
+```Js
+function addUser(user, name, score, skill, age) {
+  let nameArr = []
+  let newObj = {}
+  user.forEach((element) => {
+    nameArr.push(element.name)
+  })
+  if (!nameArr.includes(name)) {
+    newObj.name = name
+    newObj.score = score || 0
+    newObj.skill = skill || `NONE`
+    newObj.age = age || 0
+  } else {
+    return `User Already exist`
+  }
+  user.push(newObj)
+  return user
+}
+
+console.log(addUser(users, 'Raja', 76, ['HTM', 'CSS', 'JS'], 28))
+```
+
 <li>
 </li>
 </ol>

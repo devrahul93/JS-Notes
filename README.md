@@ -1559,19 +1559,15 @@ console.log(addUserSkill(users, 'Raja', ['React', 'Js']))
 <li>
 Print the following pattern using loop and console.log(). (2.5 pts)
 
+```Md
 #
-
 ##
-
 ###
-
 ####
-
 #####
-
 ######
-
 #######
+```
 
 ```Js
 for(let i='#';i.length<8;i+='#'){

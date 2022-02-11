@@ -1277,4 +1277,61 @@ console.log(shuffle(arr))
 ```
 
 </li>
+
+<li>
+Write a function which can generate a random Finnish car code.
+
+console.log(genCarPlateNum())
+AFG-205
+console.log(genCarPlateNum())
+JCB-586
+
+```Js
+function genCarPlateNum() {
+  let alphabet = [
+    'A',
+    'B',
+    'C',
+    'D',
+    'E',
+    'F',
+    'G',
+    'H',
+    'I',
+    'J',
+    'K',
+    'L',
+    'M',
+    'N',
+    'O',
+    'P',
+    'Q',
+    'R',
+    'S',
+    'T',
+    'U',
+    'V',
+    'W',
+    'X',
+    'Y',
+    'Z',
+  ]
+
+  let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  let AlphArr = []
+  let numArr = []
+  let newArr = alphabet.sort(() => Math.random() - 0.5)
+  let newNum = num.sort(() => Math.random() - 0.5)
+  numArr.push(newNum[0], newNum[1], newNum[2])
+  AlphArr.push(newArr[0], newArr[1], newArr[2])
+
+  return `${AlphArr.join('')} - ${numArr.join('')}`
+}
+
+console.log(genCarPlateNum())
+
+```
+
+</li>
+
 </ol>

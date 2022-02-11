@@ -1528,6 +1528,26 @@ function addUser(user, name, score, skill, age) {
 console.log(addUser(users, 'Raja', 76, ['HTM', 'CSS', 'JS'], 28))
 ```
 
+```Js
+
+function addUserSkill(user, name, skill) {
+  let newName = []
+  user.forEach((element) => newName.push(element.name))
+  if (newName.includes(name)) {
+    for (let property in user) {
+      if (user[property].name == name) {
+        user[property].skills = skill
+      }
+    }
+  } else {
+    return `${name} user does not exist`
+  }
+  return user
+}
+
+console.log(addUserSkill(users, 'Raja', ['React', 'Js']))
+```
+
 <li>
 </li>
 </ol>

@@ -17,12 +17,3 @@ const todoList = [
     completed: false,
   },
 ]
-
-const editTask = (taskNum, newTask, newTime, bool) => {
-  todoList[taskNum].task = newTask
-  todoList[taskNum].time = newTime
-  todoList[taskNum].completed = bool
-  return todoList
-}
-
-console.log(editTask(0, 'Complete Js Test', '11-02-2022 12.00', false))

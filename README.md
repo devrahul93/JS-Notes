@@ -1417,4 +1417,31 @@ console.log(editTask(0, 'Complete Js Test', '11-02-2022 12.00', false))
 ```
 
 </li>
+<li>
+Write a function which check if items of an array are unique?
+
+```Js
+const arrOne = [1, 4, 6, 2, 1]
+const arrTwo = [1, 4, 6, 2, 3]
+
+function checkUniqueness(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (i != j) {
+        if (arr[i] == arr[j]) {
+          return true
+        }
+      }
+    }
+  }
+  return false
+}
+
+console.log(checkUniqueness(arrOne))
+//false
+console.log(checkUniqueness(arrTwo))
+//true
+```
+
+</li>
 </ol>

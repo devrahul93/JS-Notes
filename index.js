@@ -1,16 +1,17 @@
-// By checking all pairs (brute force solution):
+//Find the first repeated character in a string
 
-// Time complexity: O(n�)
-// Space complexity: O(1)
+let str = 'uniud'
 
-let arr = [1, 5, 7, -1]
-function findPair(arr, k) {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[i] + arr[j] == k) return true
+function repeatedChar(str) {
+  let newStr = str.split('')
+  for (let i = 0; i < newStr.length; i++) {
+    for (let j = 0; j < newStr.length; j++) {
+      if (newStr[i] == newStr[j]) {
+        return newStr[i]
+      }
     }
   }
-  return false
+  return '\0'
 }
 
-console.log(findPair(arr, 9))
+console.log(repeatedChar(str))

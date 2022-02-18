@@ -1632,6 +1632,45 @@ for (let index = 0; index < 10; index++) {
 ```
 
 </li>
+<li>
+Given an array of integers, and a number ‘sum’, find the number of pairs of integers in the array whose sum is equal to ‘sum’.
+
+```Js
+let arr = [1, 5, 7, -1]
+
+const sumUpToNum = (arr, total) => {
+  let bool
+  arr.reduce((prevValue, currValue) => {
+    if (prevValue + currValue == total) {
+      bool = true
+    }
+  })
+  return bool || false
+}
+
+console.log(sumUpToNum(arr, 9))
+```
+
+```Js
+// By checking all pairs (brute force solution):
+
+// Time complexity: O(n�)
+// Space complexity: O(1)
+
+let arr = [1, 5, 7, -1]
+function findPair(arr, k) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] + arr[j] == k) return true
+    }
+  }
+  return false
+}
+
+console.log(findPair(arr, 9))
+```
+
+</li>
 </ol>
 </li>
 </ol>

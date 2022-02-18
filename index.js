@@ -1,18 +1,16 @@
-// Print the following pattern using loop and console.log(). (2.5 pts)
+// By checking all pairs (brute force solution):
 
-// i    i^2   i^3
-// 0    0     0
-// 1    1     1
-// 2    4     8
-// 3    9     27
-// 4    16    64
-// 5    25    125
-// 6    36    216
-// 7    49    343
-// 8    64    512
-// 9    81    729
-// 10   100   1000
+// Time complexity: O(n�)
+// Space complexity: O(1)
 
-for (let index = 0; index < 10; index++) {
-  console.log(`${index}   ${index * index}   ${index * index * index}`)
+let arr = [1, 5, 7, -1]
+function findPair(arr, k) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] + arr[j] == k) return true
+    }
+  }
+  return false
 }
+
+console.log(findPair(arr, 9))
